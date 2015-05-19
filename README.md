@@ -1,7 +1,7 @@
 #Home Lab
 ##Basic Hyper-V
 ----------
-This collection of scripts is designed to create the virtual machines for a basic Windows Server 2012 home lab built on Windows 8.1 Pro Client Hyper-V. These scripts are not for installing and configuring the Operating Systems.
+This script is designed to create the virtual machines for a basic Windows Server 2012 home lab built on Windows 8.1 Pro Client Hyper-V. These scripts are not for installing and configuring the Operating Systems.
 *These scripts should also work on Windows Hyper-V Server (I'll update this after I have tested)*
 
 This lab requires the following:
