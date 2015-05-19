@@ -13,6 +13,10 @@
 Param()
 
 Begin{
+    Write-Verbose "Importing modules..."
+    $Modules = @("Hyper-V")
+    $Modules | Import-Module
+    
     $VirtualMachines = @("DC1","FP1")
     $VHDPath = "F:\Virtual Hard Drives"
     $VMPath =  "F:\Virtual Machines"
@@ -34,6 +38,7 @@ Process{
         Set-VM -Name $VM -ProcessorCount 2
         
         If ($VM = "FP01") {
+            Write-Verbose "FP01 has a data VHDX. Adding it..."
             New-VHD -Fixed -Path "$VHDPath\$VM\$VM-D.vhdx" -SizeBytes 10GB
             Add-VMHardDiskDrive -VM $VirtualMachine -Path "$VHDPath\$VM\$VM-D.vhdx"
         }
