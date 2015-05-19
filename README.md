@@ -14,12 +14,12 @@ The following is recommended:
 - Quad core processor
 
 This set of scripts will create the following servers:
-###DC1
+###DC01
 - 2 Cores
 - 1GB of memory
 - 25GB VHDX
 
-###FP1
+###FP01
 - 2 Cores
 - 1GB of memory
 - 25GB VHDX
